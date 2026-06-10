@@ -81,15 +81,15 @@ overflow:hidden;
     content:'';
     position:absolute;
 
-    width:800px;
-    height:800px;
+    width:1200px;
+    height:1200px;
 
     background:url('logomapnet.jpg') center center no-repeat;
     background-size:contain;
 
-    opacity:0.08;
+    opacity:0.12;
 
-    top:50%;
+    top:55%;
     left:50%;
 
     transform:translate(-50%,-50%);
@@ -97,6 +97,8 @@ overflow:hidden;
     z-index:0;
 
     pointer-events:none;
+
+    filter:blur(1px);
 }
 
 .hero-content{
