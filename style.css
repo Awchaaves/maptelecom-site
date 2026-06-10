@@ -74,8 +74,35 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:140px 20px 80px;
+position:relative;
+overflow:hidden;
+}
+.hero::before{
+    content:'';
+    position:absolute;
+
+    width:800px;
+    height:800px;
+
+    background:url('logomapnet.jpg') center center no-repeat;
+    background-size:contain;
+
+    opacity:0.08;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:0;
+
+    pointer-events:none;
 }
 
+.hero-content{
+    position:relative;
+    z-index:2;
+}
 .hero-content{
 max-width:800px;
 }
